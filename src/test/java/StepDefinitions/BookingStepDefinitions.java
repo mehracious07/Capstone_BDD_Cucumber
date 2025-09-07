@@ -1,6 +1,6 @@
 package StepDefinitions;
 
-import org.junit.Assert;
+import org.testng.Assert;
 //import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 
@@ -49,8 +49,9 @@ public class BookingStepDefinitions {
 	public void i_should_see_the_booking_summary_page_with_the_selected_room_details() {
 	    // Write code here that turns the phrase above into concrete actions
 		 // Write code here that turns the phrase above into concrete actions
-		 boolean isSummaryDisplayed = B.isBookingSummaryDisplayed();
-		    Assert.assertTrue("Booking summary page is not displayed!", isSummaryDisplayed);
+		    boolean isSummaryDisplayed = B.isBookingSummaryDisplayed();
+		    Assert.assertTrue(isSummaryDisplayed, "Booking summary page is not displayed!");
+
 
 		    System.out.println("Booking summary page displayed"); 
 	}

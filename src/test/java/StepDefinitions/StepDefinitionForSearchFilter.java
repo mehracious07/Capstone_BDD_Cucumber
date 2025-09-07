@@ -1,6 +1,6 @@
 package StepDefinitions;
 
-import org.junit.Assert;
+import org.testng.Assert;
 import org.openqa.selenium.WebDriver;
 
 import io.cucumber.java.en.Given;
@@ -24,7 +24,8 @@ public class StepDefinitionForSearchFilter {
 	@Given("the search bar is displayed")
 	public void the_search_bar_is_displayed() {
 	    // Write code here that turns the phrase above into concrete actions
-		Assert.assertTrue("Search bar should be displayed", SFP.isSearchBarDisplayed());
+		Assert.assertTrue(SFP.isSearchBarDisplayed(), "Search bar should be displayed");
+
 	  
 	}
 
@@ -75,8 +76,9 @@ public class StepDefinitionForSearchFilter {
 
 	@Then("I should see an error message {string}")
 	public void i_should_see_an_error_message(String expectedMessage) {
-		  Assert.assertTrue("Expected error message not displayed: " + expectedMessage,
-                  SFP.isErrorMessageDisplayed(expectedMessage));
+		Assert.assertTrue(SFP.isErrorMessageDisplayed(expectedMessage),
+                "Expected error message not displayed: " + expectedMessage);
+
 	}
 
 	

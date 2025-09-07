@@ -39,7 +39,7 @@ public class BookingPage {
 	    } else {
 	        throw new RuntimeException("No hotels found in the search results!");
 	    }
-	    // ❌ Remove wait for room dropdown here
+	    
 	}
 
 

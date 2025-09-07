@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-09-07T17:40:33 IST" name="Suite" finished-at="2025-09-07T17:41:25 IST" duration-ms="52608">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestRunner@248e319b]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-09-07T17:40:33 IST" name="Test" finished-at="2025-09-07T17:41:25 IST" duration-ms="52608">
+      <class name="TestRunner.TestRunner">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:TestRunner.TestRunner@248e319b]" started-at="2025-09-07T17:40:33 IST" name="setUpClass" finished-at="2025-09-07T17:40:33 IST" duration-ms="683" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestRunner@248e319b]" started-at="2025-09-07T17:40:33 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-07T17:40:58 IST" duration-ms="24935" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search hotels with valid destination and dates"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Hotel Search Functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestRunner@248e319b]" started-at="2025-09-07T17:40:58 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-07T17:41:09 IST" duration-ms="10932" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search hotels with empty destination"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Hotel Search Functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestRunner@248e319b]" started-at="2025-09-07T17:41:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-07T17:41:25 IST" duration-ms="15816" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search hotels with empty dates"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Hotel Search Functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Search result heading does not contain expected destination. Expected: Paris, but found: new delhi: 2,384 properties found]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Search result heading does not contain expected destination. Expected: Paris, but found: new delhi: 2,384 properties found
+at pages.SearchFilterPage.validationOfSearchResultsDisplayed(SearchFilterPage.java:121)
+at StepDefinitions.StepDefinitionForSearchFilter.i_should_see_search_results_for(StepDefinitionForSearchFilter.java:61)
+at ✽.I should see search results for "Paris"(file:///C:/Users/my%20pc/Capstone_Booking/BDD_Booking/src/test/resources/Features/SearchFilter.feature:38)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunner.TestRunner@248e319b]" started-at="2025-09-07T17:41:25 IST" name="tearDownClass" finished-at="2025-09-07T17:41:25 IST" duration-ms="176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- TestRunner.TestRunner -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
