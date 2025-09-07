@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Search hotels with empty dates&quot;, &quot;Optional[Hotel Search Functionality]&quot;)">runScenario("Search hotels with empty dates", "Optional[Hotel Search Functionality]")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -118,6 +104,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="TestRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Search hotels with valid destination and dates&quot;, &quot;Optional[Hotel Search Functionality]&quot;)">runScenario("Search hotels with valid destination and dates", "Optional[Hotel Search Functionality]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Search hotels with empty dates&quot;, &quot;Optional[Hotel Search Functionality]&quot;)">runScenario("Search hotels with empty dates", "Optional[Hotel Search Functionality]")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -137,30 +128,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">TestRunner.TestRunner</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Search hotels with empty dates&quot;, &quot;Optional[Hotel Search Functionality]&quot;)">
-                  </a> <!-- runScenario("Search hotels with empty dates", "Optional[Hotel Search Functionality]") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Search hotels with empty dates","Optional[Hotel Search Functionality]")</span>
-                  <div class="stack-trace">java.lang.AssertionError: Search result heading does not contain expected destination. Expected: Paris, but found: new delhi: 2,384 properties found
-	at pages.SearchFilterPage.validationOfSearchResultsDisplayed(SearchFilterPage.java:121)
-	at StepDefinitions.StepDefinitionForSearchFilter.i_should_see_search_results_for(StepDefinitionForSearchFilter.java:61)
-	at ✽.I should see search results for &quot;Paris&quot;(file:///C:/Users/my%20pc/Capstone_Booking/BDD_Booking/src/test/resources/Features/SearchFilter.feature:38)
-
-</div> <!-- stack-trace -->
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -173,6 +140,16 @@
                   </a> <!-- runScenario("Search hotels with valid destination and dates", "Optional[Hotel Search Functionality]") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Search hotels with valid destination and dates","Optional[Hotel Search Functionality]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Search hotels with empty dates&quot;, &quot;Optional[Hotel Search Functionality]&quot;)">
+                  </a> <!-- runScenario("Search hotels with empty dates", "Optional[Hotel Search Functionality]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Search hotels with empty dates","Optional[Hotel Search Functionality]")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -253,20 +230,20 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'TestRunner.TestRunner')
-data.setCell(0, 3, 24935);
+data.setCell(0, 3, 35997);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'TestRunner.TestRunner')
-data.setCell(1, 3, 15816);
+data.setCell(1, 3, 16386);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'TestRunner.TestRunner')
-data.setCell(2, 3, 10932);
+data.setCell(2, 3, 12138);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 51 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -299,21 +276,19 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">runScenario("Search hotels with valid destination and dates", "Optional[Hotel Search Functionality]")</span>
-                <span class="method-start">702 ms</span>
+                <span class="method-start">473 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Search hotels with empty destination", "Optional[Hotel Search Functionality]")</span>
-                <span class="method-start">25645 ms</span>
+                <span class="method-start">36479 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">runScenario("Search hotels with empty dates", "Optional[Hotel Search Functionality]")</span>
-                <span class="method-start">36579 ms</span>
+                <span class="method-start">48618 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">52407 ms</span>
+                <span class="method-start">65009 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
