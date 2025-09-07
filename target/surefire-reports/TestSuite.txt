@@ -1,4 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 65.76 s -- in TestSuite
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 50.18 s <<< FAILURE! -- in TestSuite
+TestRunner.TestRunner.runScenario["Complete hotel booking with valid details", "Optional[End-to-End Hotel Booking]"](1) -- Time elapsed: 49.05 s <<< FAILURE!
+java.lang.AssertionError: Booking summary page is not displayed! expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at StepDefinitions.BookingStepDefinitions.i_should_see_the_booking_summary_page_with_the_selected_room_details(BookingStepDefinitions.java:53)
+	at ✽.I should see the booking summary page with the selected room details(file:///C:/Users/my%20pc/Capstone_Booking/BDD_Booking/src/test/resources/Features/Booking.feature:25)
+

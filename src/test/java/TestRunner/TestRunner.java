@@ -4,7 +4,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
  
 @CucumberOptions(
-	    features = "src/test/resources/Features/Booking.feature",
+	    features = "src/test/resources/Features/SearchFilterPage.feature",
 	    glue = {"StepDefinitions","Hooks"},
 //	    tags="@sanity",
 	    plugin = {

@@ -1,68 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-07T17:44:28 IST" name="Suite" finished-at="2025-09-07T17:45:33 IST" duration-ms="65187">
+  <suite started-at="2025-09-07T18:32:39 IST" name="Suite" finished-at="2025-09-07T18:33:29 IST" duration-ms="49623">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestRunner@3c19aaa5]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-09-07T17:44:28 IST" name="Test" finished-at="2025-09-07T17:45:33 IST" duration-ms="65187">
+    <test started-at="2025-09-07T18:32:39 IST" name="Test" finished-at="2025-09-07T18:33:29 IST" duration-ms="49623">
       <class name="TestRunner.TestRunner">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:TestRunner.TestRunner@3c19aaa5]" started-at="2025-09-07T17:44:28 IST" name="setUpClass" finished-at="2025-09-07T17:44:28 IST" duration-ms="465" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:TestRunner.TestRunner@3c19aaa5]" started-at="2025-09-07T18:32:39 IST" name="setUpClass" finished-at="2025-09-07T18:32:40 IST" duration-ms="414" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestRunner@3c19aaa5]" started-at="2025-09-07T17:44:28 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-07T17:45:04 IST" duration-ms="35997" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestRunner@3c19aaa5]" started-at="2025-09-07T18:32:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-07T18:33:29 IST" duration-ms="49040" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Search hotels with valid destination and dates"]]>
+                <![CDATA["Complete hotel booking with valid details"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[Hotel Search Functionality]"]]>
+                <![CDATA["Optional[End-to-End Hotel Booking]"]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Booking summary page is not displayed! expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Booking summary page is not displayed! expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at StepDefinitions.BookingStepDefinitions.i_should_see_the_booking_summary_page_with_the_selected_room_details(BookingStepDefinitions.java:53)
+at ✽.I should see the booking summary page with the selected room details(file:///C:/Users/my%20pc/Capstone_Booking/BDD_Booking/src/test/resources/Features/Booking.feature:25)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestRunner@3c19aaa5]" started-at="2025-09-07T17:45:04 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-07T17:45:17 IST" duration-ms="12138" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Search hotels with empty destination"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Hotel Search Functionality]"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestRunner@3c19aaa5]" started-at="2025-09-07T17:45:17 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-07T17:45:33 IST" duration-ms="16386" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Search hotels with empty dates"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Hotel Search Functionality]"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunner.TestRunner@3c19aaa5]" started-at="2025-09-07T17:45:33 IST" name="tearDownClass" finished-at="2025-09-07T17:45:33 IST" duration-ms="150" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunner.TestRunner@3c19aaa5]" started-at="2025-09-07T18:33:29 IST" name="tearDownClass" finished-at="2025-09-07T18:33:29 IST" duration-ms="128" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
