@@ -1,0 +1,433 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 6,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2612003300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am on the booking website homepage",
+            "match": {
+              "location": "StepDefinitions.StepDefinitionForSearchFilter.i_am_on_the_booking_website_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 113912100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the search bar is displayed",
+            "match": {
+              "location": "StepDefinitions.StepDefinitionForSearchFilter.the_search_bar_is_displayed()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-09-08T03:14:02.648Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6160085400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Complete hotel booking with valid details",
+        "description": "",
+        "id": "end-to-end-hotel-booking;complete-hotel-booking-with-valid-details",
+        "after": [
+          {
+            "result": {
+              "duration": 3008189200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1763237900,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I want to search for hotels",
+            "match": {
+              "location": "StepDefinitions.StepDefinitionForSearchFilter.i_want_to_search_for_hotels()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 162512500,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I enter \"New Delhi\" in the destination field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"New Delhi\"",
+                  "offset": 8
+                }
+              ],
+              "location": "StepDefinitions.StepDefinitionForSearchFilter.i_enter_in_the_destination_field(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 425637000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I select check-in date as \"2025-10-01\" and select check-out date as \"2025-10-05\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2025-10-01\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"2025-10-05\"",
+                  "offset": 68
+                }
+              ],
+              "location": "StepDefinitions.StepDefinitionForSearchFilter.i_select_check_in_date_as_and_select_check_out_date_as(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4944006500,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I click the search button",
+            "match": {
+              "location": "StepDefinitions.StepDefinitionForSearchFilter.i_click_the_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 744988700,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I should see search results for \"New Delhi\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"New Delhi\"",
+                  "offset": 32
+                }
+              ],
+              "location": "StepDefinitions.StepDefinitionForSearchFilter.i_should_see_search_results_for(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 538107500,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "the results should display available hotels",
+            "match": {
+              "location": "StepDefinitions.StepDefinitionForSearchFilter.the_results_should_display_available_hotels()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 485202800,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I select the first hotel from the results",
+            "match": {
+              "location": "StepDefinitions.BookingStepDefinitions.i_select_the_first_hotel_from_the_results()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7368496200,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I select one room",
+            "match": {
+              "location": "StepDefinitions.BookingStepDefinitions.i_select_one_room()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 496025900,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I click on the Reserve button",
+            "match": {
+              "location": "StepDefinitions.BookingStepDefinitions.i_click_on_the_reserve_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6856495900,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I should see the booking summary page with the selected room details",
+            "match": {
+              "location": "StepDefinitions.BookingStepDefinitions.i_should_see_the_booking_summary_page_with_the_selected_room_details()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 241308400,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I enter guest firstName \"Sanjay\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sanjay\"",
+                  "offset": 24
+                }
+              ],
+              "location": "StepDefinitions.BookingStepDefinitions.i_enter_guest_firstName(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 209606300,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I enter guest lastName \"Mehara\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Mehara\"",
+                  "offset": 23
+                }
+              ],
+              "location": "StepDefinitions.BookingStepDefinitions.i_enter_guest_lastName(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 330349000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I enter email \"mehracious619@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"mehracious619@gmail.com\"",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinitions.BookingStepDefinitions.i_enter_email(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 623296200,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I enter phone number \"7452896780\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"7452896780\"",
+                  "offset": 21
+                }
+              ],
+              "location": "StepDefinitions.BookingStepDefinitions.i_enter_phone_number(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 31269664100,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I click Final Details button and proceed to payment page",
+            "match": {
+              "location": "StepDefinitions.BookingStepDefinitions.i_click_final_details_button_and_proceed_to_payment_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1007900,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "I enter card number \"4111111111111111\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"4111111111111111\"",
+                  "offset": 20
+                }
+              ],
+              "location": "StepDefinitions.BookingStepDefinitions.i_enter_card_number(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "I enter expiry date \"12/28\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"12/28\"",
+                  "offset": 20
+                }
+              ],
+              "location": "StepDefinitions.BookingStepDefinitions.i_enter_expiry_date(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "I enter CVV \"123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"123\"",
+                  "offset": 12
+                }
+              ],
+              "location": "StepDefinitions.BookingStepDefinitions.i_enter_cvv(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 105814200,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "I confirm the payment",
+            "match": {
+              "location": "StepDefinitions.BookingStepDefinitions.i_confirm_the_payment()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "the payment should be processed successfully",
+            "match": {
+              "location": "StepDefinitions.BookingStepDefinitions.the_payment_should_be_processed_successfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1005000,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "I should see a booking confirmation page with booking ID",
+            "match": {
+              "location": "StepDefinitions.BookingStepDefinitions.i_should_see_a_booking_confirmation_page_with_booking_id()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 999700,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "the confirmation should display hotel name, room type, dates, and total amount",
+            "match": {
+              "location": "StepDefinitions.BookingStepDefinitions.the_confirmation_should_display_hotel_name_room_type_dates_and_total_amount()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 997000,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "I should receive a confirmation email at \"john.doe@example.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"john.doe@example.com\"",
+                  "offset": 41
+                }
+              ],
+              "location": "StepDefinitions.BookingStepDefinitions.i_should_receive_a_confirmation_email_at(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@positive"
+          },
+          {
+            "name": "@endtoend"
+          }
+        ]
+      }
+    ],
+    "name": "End-to-End Hotel Booking",
+    "description": "  As a traveler\n  I want to search and book a hotel room\n  So that I can complete my trip planning online",
+    "id": "end-to-end-hotel-booking",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/Booking.feature",
+    "tags": []
+  }
+]

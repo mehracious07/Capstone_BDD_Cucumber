@@ -26,6 +26,7 @@ public class BookingPage {
     By emailInput = By.xpath("//input[@data-testid='user-details-email' ]");
     By toPaymentButton=By.xpath("//button[@name='book']");
     By cardNoInput=By.xpath("//input[@id='pc-card-number-field-ef37b206']");
+    By book = By.xpath("//button[@name='book']");
     
 	public BookingPage(WebDriver driver) {
 		this.driver=driver;
@@ -165,14 +166,14 @@ public void toPaymentPage() {
 }
 
 //----------------------------------------------------------------------------------------------------------->
-public void cardNoInput(String number) {
-	 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+public void initiateBooking() {
+	 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 
-	    WebElement cardField = wait.until(
-	        ExpectedConditions.elementToBeClickable(cardNoInput)
+	    WebElement bookButton = wait.until(
+	        ExpectedConditions.elementToBeClickable(book)
 	    );
-	    cardField.sendKeys(number);
+	    bookButton.click();
 }
 
-
+//--------------------------------------------------------------------------------------------------------------
 }

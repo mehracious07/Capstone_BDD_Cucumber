@@ -89,26 +89,25 @@ public class BookingStepDefinitions {
 
 	@When("I enter card number {string}")
 	public void i_enter_card_number(String string) {
-	    // Write code here that turns the phrase above into concrete actions
-	  B. cardNoInput(string);
-	}
+	 System.out.println("Card no :"+ string);
+	 }
 
 	@When("I enter expiry date {string}")
 	public void i_enter_expiry_date(String string) {
 	    // Write code here that turns the phrase above into concrete actions
-	  
+		 System.out.println("Expiry :"+ string);
 	}
 
 	@When("I enter CVV {string}")
 	public void i_enter_cvv(String string) {
 	    // Write code here that turns the phrase above into concrete actions
-	  
+		 System.out.println("CVV no :"+ string);
 	}
 
 	@When("I confirm the payment")
 	public void i_confirm_the_payment() {
 	    // Write code here that turns the phrase above into concrete actions
-	  
+	  B.initiateBooking();
 	}
 
 	@Then("the payment should be processed successfully")
